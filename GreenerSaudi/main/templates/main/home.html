@@ -3,6 +3,22 @@
 {% block title %}Home{% endblock %}
 {% block content %}
 
-<h1>this is the home page</h1>
+ <header class="masthead">
+      <div
+        class="container d-flex h-100 justify-content-center align-items-center px-4 px-lg-5"
+      >
+        <div class="d-flex justify-content-center">
+          <div class="text-center">
+            <h1 class="text-uppercase mx-auto my-0">Greener Saudi</h1>
+            <h2 class="text-white-50 mt-2 mb-5 mx-auto">
+              Building a Greener Future for Saudi Arabia
+            </h2>
+            <a class="btn btn-primary" role="button" href="{% url 'main:home_view' %}#about"
+              >LETS GOOOOOO!</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
 
 {% endblock %}
