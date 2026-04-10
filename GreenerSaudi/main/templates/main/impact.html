@@ -1,7 +1,86 @@
 {% extends 'main/base.html' %}
+{% load static %}
 {% block title %}Impact{% endblock %}
+{% block hero_image %}{% static 'img/sgi-homepage-background-image.jpg' %}{% endblock %}
+{% block hero_title %}Environmental Impact{% endblock %}
+{% block hero_subtitle %}Building a Greener Future for Saudi Arabia{% endblock %}
 {% block content %}
-<main class="container py-5 mt-5">
-    <h1>Impact</h1>
-</main>
+<div style="color: rgb(255, 255, 255); background: linear-gradient(2deg, black, rgba(0, 0, 0, 0.3) 100%), url('{% static 'img/National_Center_for_Wildlife_SA.jpg' %}') bottom / cover no-repeat;">
+    <div class="container py-4 py-xl-5">
+        <div class="row">
+            <div class="col-md-8 col-xl-6 p-4 mx-auto" style="width: 793px;">
+                <div>
+                    <h4 data-aos="fade-down-right" data-aos-duration="700"><br />Emissions Reduction Progress<br /><br /></h4>
+                    <p data-aos="fade-up-left" data-aos-duration="700"><br />Saudi Arabia is scaling renewable energy and carbon reduction systems, including solar, wind, hydrogen, and carbon capture projects.<br /><br />- Large renewable energy pipeline under development (tens of GW scale)<br /><br />- Carbon Capture and Storage hubs planned to capture up to <strong>44 MtCO2 annually by 2035</strong> <br /><br />These developments directly support the 278 MtCO2e reduction target by 2030.<br /><br /></p>
+                </div>
+                <hr class="my-5" />
+                <div>
+                    <h4 data-aos="fade-down-right" data-aos-duration="700"><br />Renewable Energy Transformation<br /><br /></h4>
+                    <p data-aos="fade-up-left" data-aos-duration="700"><br />The Kingdom is targeting <strong>50% of electricity generation from renewables by 2030</strong>, supported by massive solar and wind expansion programs. <br /><br />This shift reduces dependence on fossil fuels in domestic power generation and strengthens clean energy exports.<br /><br /></p>
+                </div>
+                <hr class="my-5" />
+                <div>
+                    <h4 data-aos="fade-down-right" data-aos-duration="700"><br /> Land Restoration and Reforestation<br /><br /></h4>
+                    <p data-aos="fade-up-left" data-aos-duration="700"><br />SGI supports large-scale ecosystem rehabilitation:<br /><br />- Tens of millions of trees already planted since launch<br /><br />- Reforestation programs targeting <strong>600+ million trees by 2030</strong><br /><br />- Land restoration projects across deserts, wetlands, and coastal ecosystems <br /><br />These efforts help combat desertification and improve biodiversity.<br /><br /><br /></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="background: linear-gradient(0deg, #467370 0%, rgba(0, 0, 0, 0.3) 100%); color: rgb(255, 255, 255);">
+    <div class="container py-4 py-xl-5">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col" data-aos="fade" data-aos-duration="700">
+                <img class="object-fit-fill rounded w-100 h-100" style="min-height: 300px;" src="{% static 'img/land-sea-map.svg' %}" alt="Protected land and sea map" />
+            </div>
+            <div class="col d-flex flex-column justify-content-center p-4" data-aos="fade" data-aos-duration="700">
+                <div class="text-center text-md-start d-flex flex-column align-items-center align-items-md-start mb-5">
+                    <div class="p-3" style="background: rgba(0, 0, 0, 0.3);">
+                        <h4><br />Protected Areas Expansion<br /><br /></h4>
+                        <p><br />Current protected land and marine areas stand at:<br /><br />- Around <strong>18% of land protected</strong><br /><br /><br />- Around <strong>6% of marine areas protected</strong><br /><br /><br />The goal is to increase this to <strong>30% by 2030</strong><br /><br /></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="p-3" style="color: rgb(255, 255, 255); background: linear-gradient(8deg, black, #474e5d 100%);">
+    <h1 data-aos="fade-right" data-aos-duration="500"><br />Environmental and Social Benefits<br /><br /></h1>
+    <div class="container py-4 py-xl-5" data-aos="fade-up">
+        <div class="row gy-4 row-cols-2 row-cols-md-4">
+            <div class="col">
+                <div class="text-center d-flex flex-column justify-content-center align-items-center py-3">
+                    <div class="bs-icon-xl bs-icon-circle bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center mb-2 d-inline-block bs-icon" style="background: rgb(255, 255, 255); color: rgb(0, 0, 0);"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor"><g><path d="M0,0h24v24H0V0z" fill="none"></path></g><g><g><path d="M14.5,17c0,1.65-1.35,3-3,3s-3-1.35-3-3h2c0,0.55,0.45,1,1,1s1-0.45,1-1s-0.45-1-1-1H2v-2h9.5 C13.15,14,14.5,15.35,14.5,17z M19,6.5C19,4.57,17.43,3,15.5,3S12,4.57,12,6.5h2C14,5.67,14.67,5,15.5,5S17,5.67,17,6.5 S16.33,8,15.5,8H2v2h13.5C17.43,10,19,8.43,19,6.5z M18.5,11H2v2h16.5c0.83,0,1.5,0.67,1.5,1.5S19.33,16,18.5,16v2 c1.93,0,3.5-1.57,3.5-3.5S20.43,11,18.5,11z"></path></g></g></svg></div>
+                    <div class="px-3">
+                        <p class="mb-0"><br />Improved air quality<br /><br /></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="text-center d-flex flex-column justify-content-center align-items-center py-3">
+                    <div class="bs-icon-xl bs-icon-circle bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center mb-2 d-inline-block bs-icon" style="color: rgb(0, 0, 0); background: rgb(255, 255, 255);"><svg class="icon icon-tabler icon-tabler-storm" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path><path d="M12 12m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path><path d="M5.369 14.236c-1.839 -3.929 -1.561 -7.616 -.704 -11.236"></path><path d="M18.63 9.76c1.837 3.928 1.561 7.615 .703 11.236"></path></svg></div>
+                    <div class="px-3">
+                        <p class="mb-0"><br />Reduced dust storms<br /><br /></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="text-center d-flex flex-column justify-content-center align-items-center py-3">
+                    <div class="bs-icon-xl bs-icon-circle bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center mb-2 d-inline-block bs-icon" style="background: rgb(255, 255, 255); color: rgb(0, 0, 0);"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor"><g><rect fill="none" height="24" width="24"></rect></g><g><g><polygon points="12,10.41 16,6.41 14.59,5 12,7.59 12,4 10,4 10,7.59 7.41,5 6,6.41 10,10.41 10,12 8.41,12 4.41,8 3,9.41 5.59,12 2,12 2,14 5.59,14 3,16.59 4.41,18 8.41,14 10,14 10,15.59 6,19.59 7.41,21 10,18.41 10,22 12,22 12,18.41 14.59,21 16,19.59 12,15.59 12,14 13.59,14 17.59,18 19,16.59 16.41,14 20,14 20,12 12,12"></polygon><rect height="5" width="2" x="19" y="2"></rect><rect height="2" width="2" x="19" y="8"></rect></g></g></svg></div>
+                    <div class="px-3">
+                        <p class="mb-0"><br />Cooler urban microclimates<br /><br /></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="text-center d-flex flex-column justify-content-center align-items-center py-3">
+                    <div class="bs-icon-xl bs-icon-circle bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center mb-2 d-inline-block bs-icon" style="background: rgb(255, 255, 255); color: rgb(0, 0, 0);"><svg class="bi bi-person-workspace" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16"><path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"></path><path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.4 5.4 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z"></path></svg></div>
+                    <div class="px-3">
+                        <p class="mb-0"><br />Job creation in environmental and green sectors<br /><br /></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

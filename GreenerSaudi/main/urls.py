@@ -8,10 +8,10 @@ urlpatterns = [
     path('about/', views.about_view, name='about_view'),
     path('impact/', views.impact_view, name='impact_view'),
     path('progress/', views.progress_view, name='progress_view'),
-    path('future/', views.future_view, name='future_view'),
+    path('goal/', views.goal_view, name='goal_view'),
     path('get-involved/', views.get_involved_view, name='get_involved_view'),
-    path('updates/', views.updates_view, name='updates_view'),
+    path('news/', views.news_view, name='news_view'),
     path('contact/', views.contact_view, name='contact_view'),
-    path('base/', views.base_view, name='base_view'),
+    path('initiative/<slug:slug>/', views.initiative_detail_view, name='initiative_detail_view'),
 ]
 

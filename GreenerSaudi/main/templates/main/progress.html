@@ -1,7 +1,79 @@
 {% extends 'main/base.html' %}
+{% load static %}
 {% block title %}Progress{% endblock %}
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/Before---After-Image-Slider.css' %}" />
+<link rel="stylesheet" href="{% static 'css/Timeline-1.css' %}" />
+{% endblock %}
+{% block hero_image %}{% static 'img/action-at-home.jpg' %}{% endblock %}
+{% block hero_title %}Tracking the Journey of Change{% endblock %}
+{% block hero_subtitle %}Building a Greener Future for Saudi Arabia{% endblock %}
 {% block content %}
-<main class="container py-5 mt-5">
-    <h1>Progress</h1>
-</main>
+<div style="color: rgb(255, 255, 255); background: linear-gradient(-32deg, black, rgba(0, 0, 0, 0.3) 100%), linear-gradient(-135deg, black, rgba(100, 161, 157, 0.75) 100%);">
+    <div class="container py-4 py-xl-5">
+        <div class="row">
+            <div class="col-md-8 col-xl-6 p-4 mx-auto" data-aos="fade-up-right" data-aos-duration="700">
+                <div class="d-flex align-items-center align-items-md-start align-items-xl-center">
+                    <div>
+                        <h4><br /><br />Scaling Renewable Energy and Emissions Reduction<br /><br /></h4>
+                        <p><br /><br />Saudi Arabia has significantly accelerated its transition toward cleaner energy and lower emissions. Renewable energy capacity has expanded rapidly through large-scale solar and wind projects, supporting the national target of generating 50% of electricity from renewables by 2030.<br /><br />At the same time, the Kingdom is investing in advanced carbon capture technologies, with plans to capture up to&nbsp;44 million tons of CO2 annually by 2035, positioning itself as a global leader in carbon management.<br /><br /><br /></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-xl-6 align-self-center p-4 mx-auto" data-aos="fade-up-left" data-aos-duration="700" style="width: 210px;">
+                <div class="d-flex align-items-center align-items-md-start align-items-xl-center">
+                    <h4><br />Renewable energy in Saudi Arabia is 5%<br /><br /></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-4 py-xl-5">
+        <div class="row">
+            <div class="col-md-8 col-xl-6 p-4 mx-auto" data-aos="fade-up-right" data-aos-duration="700">
+                <div class="d-flex align-items-center align-items-md-start align-items-xl-center">
+                    <div>
+                        <h4><br /><br />Nationwide Reforestation and Land Restoration<br /><br /></h4>
+                        <p><br /><br />Large-scale environmental restoration efforts are already underway across the country. Since the launch of the Saudi Green Initiative,&nbsp;over 40 million trees have been planted, contributing to the long-term goal of planting&nbsp;600 million trees by 2030.<br /><br />These projects are helping combat desertification, restore degraded land, and improve biodiversity across multiple regions, including deserts, wetlands, and coastal areas.<br /><br /><br /></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-xl-6 align-self-center p-4 mx-auto" data-aos="fade-up-left" data-aos-duration="700" style="width: 210px;">
+                <div class="d-flex align-items-center align-items-md-start align-items-xl-center">
+                    <h4><br />40 Million Trees Planted<br /><br /></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="color: rgb(255, 255, 255); background: linear-gradient(-2deg, black, #467370 100%);">
+    <div class="container p-5">
+        <h1><br />Visible Change on the Ground<br /><br /></h1>
+        <p><br />A clear visual representation of progress, demonstrating how targeted environmental actions are helping restore ecosystems and combat desertification across the Kingdom.<br /><br /></p>
+        <div class="slider-wrapper">
+            <div class="image-container before"><img src="{% static 'img/before.jpg' %}" alt="Before restoration" /></div>
+            <div class="image-container after"><img src="{% static 'img/after.jpg' %}" alt="After restoration" /></div>
+            <div class="slider">
+                <div class="slider-circle"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="background: linear-gradient(1deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%), url('{% static 'img/about-sgi-bg-web.webp' %}') top / cover no-repeat, rgba(0, 0, 0, 0.5);">
+    <div class="time-body timeline" style="background: rgba(255, 255, 255, 0);">
+        <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300" data-aos-once="true" class="time-container left"><div class="time-content"><h2>2016</h2><p>Launch of the King Salman Renewable Energy Initiative to kickstart large-scale renewable energy development in Saudi Arabia.</p></div></div>
+        <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" data-aos-once="true" class="time-container right"><div class="time-content"><h2>2017</h2><p>Announcement of the National Renewable Energy Program to expand clean energy capacity and diversify the energy mix.</p></div></div>
+        <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300" data-aos-once="true" class="time-container left"><div class="time-content"><h2>2018</h2><p>Launch of the National Environment Strategy aimed at protecting ecosystems and improving environmental sustainability nationwide.</p></div></div>
+        <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" data-aos-once="true" class="time-container right"><div class="time-content"><h2>2019</h2><p>Establishment of the Special Forces for Environmental Security to enforce environmental protection and combat ecological violations.</p></div></div>
+        <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300" data-aos-once="true" class="time-container left"><div class="time-content"><h2>2020</h2><p>“Let’s Make It Green” campaign announced to reduce desertification and increase environmental awareness and action.</p></div></div>
+        <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" data-aos-once="true" class="time-container right"><div class="time-content"><h2>2021</h2><p>Inaugural Saudi Green Initiative Forum, Middle East Green Summit, and Youth Green Summit launched to unify climate action efforts.</p></div></div>
+        <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300" data-aos-once="true" class="time-container left"><div class="time-content"><h2>2022</h2><p>SGI Forum and MGI Summit held alongside COP27 in Sharm El Sheikh, showcasing Saudi Arabia’s climate commitments.</p></div></div>
+        <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" data-aos-once="true" class="time-container right"><div class="time-content"><h2>2023</h2><p>SGI Forum and SGI Talks hosted at COP28 in Dubai within the Saudi Green Initiative Gallery.</p></div></div>
+        <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300" data-aos-once="true" class="time-container left"><div class="time-content"><h2>2024</h2><p>SGI Forum held on the sidelines of UNCCD COP16 in Riyadh, reinforcing global land restoration discussions.</p></div></div>
+        <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" data-aos-once="true" class="time-container right"><div class="time-content"><h2>2030</h2><p>Aim to achieve NDC reducing emissions by more than 278 mtpa, protect 30% of land and sea, and plant 600+ million trees</p></div></div>
+        <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300" data-aos-once="true" class="time-container left"><div class="time-content"><h2>2060</h2><p>National goal to achieve net-zero carbon emissions across Saudi Arabia.</p></div></div>
+    </div>
+</div>
+{% endblock %}
+{% block extra_scripts %}
+<script src="{% static 'js/Before---After-Image-Slider-after-before.js' %}"></script>
 {% endblock %}
