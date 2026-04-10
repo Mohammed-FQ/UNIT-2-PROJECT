@@ -9,47 +9,53 @@
 {% block hero_title %}Tracking the Journey of Change{% endblock %}
 {% block hero_subtitle %}Building a Greener Future for Saudi Arabia{% endblock %}
 {% block content %}
-<div style="color: rgb(255, 255, 255); background: linear-gradient(-32deg, black, rgba(0, 0, 0, 0.3) 100%), linear-gradient(-135deg, black, rgba(100, 161, 157, 0.75) 100%);">
-    <div class="container py-4 py-xl-5">
-        <div class="row">
-            <div class="col-md-8 col-xl-6 p-4 mx-auto" data-aos="fade-up-right" data-aos-duration="700">
-                <div class="d-flex align-items-center align-items-md-start align-items-xl-center">
-                    <div>
-                        <h4><br /><br />Scaling Renewable Energy and Emissions Reduction<br /><br /></h4>
-                        <p><br /><br />Saudi Arabia has significantly accelerated its transition toward cleaner energy and lower emissions. Renewable energy capacity has expanded rapidly through large-scale solar and wind projects, supporting the national target of generating 50% of electricity from renewables by 2030.<br /><br />At the same time, the Kingdom is investing in advanced carbon capture technologies, with plans to capture up to&nbsp;44 million tons of CO2 annually by 2035, positioning itself as a global leader in carbon management.<br /><br /><br /></p>
-                    </div>
+<div class="progress-intro-section">
+    <div class="container section-shell">
+        <div class="row g-4 align-items-stretch">
+            <div class="col-lg-8" data-aos="fade-up-right" data-aos-duration="700">
+                <div class="section-panel section-stack h-100">
+                    <span class="metric-badge">Energy Transition</span>
+                    <h4 class="section-heading">Scaling Renewable Energy and Emissions Reduction</h4>
+                    <p class="section-lead">Saudi Arabia has accelerated its shift toward cleaner energy and lower emissions. Renewable energy capacity is growing through large-scale solar and wind projects, supporting the national target of generating 50% of electricity from renewables by 2030.</p>
+                    <p class="section-lead">At the same time, the Kingdom is investing in advanced carbon capture technologies, with plans to capture up to <strong>44 million tons of CO2 annually by 2035</strong>.</p>
                 </div>
             </div>
-            <div class="col-md-8 col-xl-6 align-self-center p-4 mx-auto" data-aos="fade-up-left" data-aos-duration="700" style="width: 210px;">
-                <div class="d-flex align-items-center align-items-md-start align-items-xl-center">
-                    <h4><br />Renewable energy in Saudi Arabia is 5%<br /><br /></h4>
+            <div class="col-lg-4" data-aos="fade-up-left" data-aos-duration="700">
+                <div class="stat-card h-100 d-flex flex-column justify-content-center">
+                    <span class="metric-badge mb-3">Today</span>
+                    <p class="metric-value">5%</p>
+                    <p class="section-lead">Current renewable energy share in Saudi Arabia's energy mix.</p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container py-4 py-xl-5">
-        <div class="row">
-            <div class="col-md-8 col-xl-6 p-4 mx-auto" data-aos="fade-up-right" data-aos-duration="700">
-                <div class="d-flex align-items-center align-items-md-start align-items-xl-center">
-                    <div>
-                        <h4><br /><br />Nationwide Reforestation and Land Restoration<br /><br /></h4>
-                        <p><br /><br />Large-scale environmental restoration efforts are already underway across the country. Since the launch of the Saudi Green Initiative,&nbsp;over 40 million trees have been planted, contributing to the long-term goal of planting&nbsp;600 million trees by 2030.<br /><br />These projects are helping combat desertification, restore degraded land, and improve biodiversity across multiple regions, including deserts, wetlands, and coastal areas.<br /><br /><br /></p>
-                    </div>
+    <div class="container section-shell pt-0">
+        <div class="row g-4 align-items-stretch">
+            <div class="col-lg-8" data-aos="fade-up-right" data-aos-duration="700">
+                <div class="section-panel section-stack h-100">
+                    <span class="metric-badge">Land Restoration</span>
+                    <h4 class="section-heading">Nationwide Reforestation and Land Restoration</h4>
+                    <p class="section-lead">Large-scale environmental restoration efforts are already underway across the country. Since the launch of the Saudi Green Initiative, more than 40 million trees have been planted, contributing to the long-term goal of planting 600 million trees by 2030.</p>
+                    <p class="section-lead">These projects are helping combat desertification, restore degraded land, and improve biodiversity across deserts, wetlands, and coastal areas.</p>
                 </div>
             </div>
-            <div class="col-md-8 col-xl-6 align-self-center p-4 mx-auto" data-aos="fade-up-left" data-aos-duration="700" style="width: 210px;">
-                <div class="d-flex align-items-center align-items-md-start align-items-xl-center">
-                    <h4><br />40 Million Trees Planted<br /><br /></h4>
+            <div class="col-lg-4" data-aos="fade-up-left" data-aos-duration="700">
+                <div class="stat-card h-100 d-flex flex-column justify-content-center">
+                    <span class="metric-badge mb-3">Milestone</span>
+                    <p class="metric-value">40 million</p>
+                    <p class="section-lead">Trees planted so far across Saudi Arabia.</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div style="color: rgb(255, 255, 255); background: linear-gradient(-2deg, black, #467370 100%);">
+<div class="progress-visual-section">
     <div class="container p-5">
-        <h1><br />Visible Change on the Ground<br /><br /></h1>
-        <p><br />A clear visual representation of progress, demonstrating how targeted environmental actions are helping restore ecosystems and combat desertification across the Kingdom.<br /><br /></p>
+        <h1 class="section-heading">Visible Change on the Ground</h1>
+        <p class="section-lead timeline-intro">A visual comparison of restoration progress, showing how targeted environmental actions can reshape vulnerable landscapes over time.</p>
         <div class="slider-wrapper">
+            <div class="info-text info-text-before">Before</div>
+            <div class="info-text info-text-after">After</div>
             <div class="image-container before"><img src="{% static 'img/before.jpg' %}" alt="Before restoration" /></div>
             <div class="image-container after"><img src="{% static 'img/after.jpg' %}" alt="After restoration" /></div>
             <div class="slider">
@@ -58,7 +64,14 @@
         </div>
     </div>
 </div>
-<div style="background: linear-gradient(1deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%), url('{% static 'img/about-sgi-bg-web.webp' %}') top / cover no-repeat, rgba(0, 0, 0, 0.5);">
+<div class="image-section image-section--timeline position-relative" style="--section-image: url('{% static 'img/about-sgi-bg-web.webp' %}');">
+    <div class="container timeline-side-heading">
+        <div class="row justify-content-end">
+            <div class="col-lg-5 text-end">
+                <h2 class="section-heading section-heading--caps" data-aos="fade-left" data-aos-duration="900" data-aos-once="true">Timeline of Progress</h2>
+            </div>
+        </div>
+    </div>
     <div class="time-body timeline" style="background: rgba(255, 255, 255, 0);">
         <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300" data-aos-once="true" class="time-container left"><div class="time-content"><h2>2016</h2><p>Launch of the King Salman Renewable Energy Initiative to kickstart large-scale renewable energy development in Saudi Arabia.</p></div></div>
         <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" data-aos-once="true" class="time-container right"><div class="time-content"><h2>2017</h2><p>Announcement of the National Renewable Energy Program to expand clean energy capacity and diversify the energy mix.</p></div></div>

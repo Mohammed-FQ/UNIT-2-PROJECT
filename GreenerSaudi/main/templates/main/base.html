@@ -1,6 +1,6 @@
 {% load static %}
 <!doctype html>
-<html data-bs-theme="light" lang="en">
+<html data-bs-theme="{{ theme_mode }}" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -29,7 +29,7 @@
     <body id="page-top"{% block body_attrs %}{% endblock %}>
       <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="mainNav" data-static-nav="false">
       <div class="container">
-        <a class="navbar-brand" href="#page-top">Greener Saudi</a
+        <a class="navbar-brand" href="{% url 'main:home_view' %}">Greener Saudi</a
         ><button
           class="navbar-toggler navbar-toggler-right"
           data-bs-toggle="collapse"
@@ -47,7 +47,7 @@
               <a class="nav-link" href="{% url 'main:home_view' %}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'main:about_view' %}">About the Initiative</a>
+              <a class="nav-link" href="{% url 'main:about_view' %}">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{% url 'main:impact_view' %}">Impact</a>
@@ -90,12 +90,12 @@
         {% block content %}
         {% endblock %}
     </div>
-         <footer class="fs-6 text-center text-white-50 bg-black mt-0 footer">
-      <footer class="text-center bg-body py-4">
+    <footer class="fs-6 text-center text-white-50 bg-black mt-0 footer">
+      <div class="text-center bg-body py-4">
         <div class="container">
           <div class="row row-cols-1 row-cols-lg-3">
             <div class="col">
-              <p class="text-body my-2">For the future</p><a href="{% url 'main:contact_view' %}">Contact Us</a>
+              <p class="text-body my-2">For the future</p>
             </div>
             <div class="col">
               <ul class="list-inline my-2">
@@ -170,18 +170,22 @@
               </ul>
             </div>
             <div class="col">
-              <ul class="list-inline my-2">
-                <li class="list-inline-item list-inline-item">
-                  <a class="link-body-emphasis" href="#">English</a>
-                </li>
-                <li class="list-inline-item list-inline-item">
-                  <a class="link-body-emphasis" href="#">العربية</a>
-                </li>
-              </ul>
+              <form class="theme-toggle-form footer-theme-toggle" method="post" action="{% url 'main:set_theme_view' %}">
+                {% csrf_token %}
+                <input type="hidden" name="next" value="{{ request.get_full_path }}" />
+                <input type="hidden" name="theme" value="{% if theme_mode == 'light' %}dark{% else %}light{% endif %}" />
+                <button class="theme-toggle-button" type="submit" aria-label="Switch to {% if theme_mode == 'light' %}dark{% else %}light{% endif %} mode">
+                  {% if theme_mode == 'light' %}
+                  Dark Mode
+                  {% else %}
+                  Light Mode
+                  {% endif %}
+                </button>
+              </form>
             </div>
           </div>
         </div>
-      </footer>
+      </div>
     </footer>
     <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
     {% block extra_scripts %}{% endblock %}

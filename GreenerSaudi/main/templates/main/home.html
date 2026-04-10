@@ -3,32 +3,30 @@
 {% block title %}Home{% endblock %}
 {% block body_attrs %} style="background: rgb(0, 0, 0);"{% endblock %}
 {% block content %}
-<div
-  style="background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%), url('{% static 'img/sgi-approach.jpg' %}') center / cover no-repeat; color: rgb(255, 255, 255);"
->
-  <div class="container py-4 py-xl-5">
-    <div class="row">
-      <div class="col col-xl-1">
-        <h1 class="me-0" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+<div class="image-section image-section--balanced" style="--section-image: url('{% static 'img/sgi-approach.jpg' %}');">
+  <div class="container section-shell">
+    <div class="row align-items-center g-4">
+      <div class="col-xl-4">
+        <h1 class="section-heading section-heading--wide me-0" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
           Understanding the Initiative
         </h1>
       </div>
-      <div class="col-md-8 col-xl-6 p-4 mx-auto">
-        <div class="d-flex align-items-center align-items-md-start align-items-xl-center" data-aos="fade-left" data-aos-duration="700" data-aos-once="true">
+      <div class="col-md-10 col-xl-7 ms-auto">
+        <div class="section-panel section-stack" data-aos="fade-left" data-aos-duration="700" data-aos-once="true">
           <div>
-            <h4>What is the Initiative</h4>
-            <p><br />Understand how the initiative began, its key objectives, and how it aligns with national sustainability efforts.<br /><br /></p>
-            <a href="{% url 'main:about_view' %}">Explore<svg class="bi bi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+            <h4 class="section-heading">What is the Initiative</h4>
+            <p class="section-lead">Understand how the initiative began, its key objectives, and how it aligns with national sustainability efforts.</p>
+            <a class="section-link" href="{% url 'main:about_view' %}">Explore<svg class="bi bi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"></path>
               </svg></a>
           </div>
         </div>
-        <hr class="my-5" />
-        <div class="d-flex align-items-center align-items-md-start align-items-xl-center" data-aos="fade-left" data-aos-duration="700" data-aos-once="true">
+        <hr class="section-divider" />
+        <div class="section-panel section-stack" data-aos="fade-left" data-aos-duration="700" data-aos-once="true">
           <div>
-            <h4>Why It Matters</h4>
-            <p><br />Discover the environmental, economic, and global importance of sustainability efforts in Saudi Arabia.<br /><br /></p>
-            <a href="{% url 'main:impact_view' %}">Explore<svg class="bi bi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+            <h4 class="section-heading">Why It Matters</h4>
+            <p class="section-lead">Discover the environmental, economic, and global importance of sustainability efforts in Saudi Arabia.</p>
+            <a class="section-link" href="{% url 'main:impact_view' %}">Explore<svg class="bi bi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"></path>
               </svg></a>
           </div>
@@ -37,79 +35,75 @@
     </div>
   </div>
 </div>
-<div
-  style="background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%), url('{% static 'img/windfarm.webp' %}') center / cover no-repeat; color: rgb(255, 255, 255);"
->
-  <div class="container py-4 py-xl-5">
-    <div class="row">
-      <div class="col-md-8 col-xl-6 p-4 mx-auto">
-        <div class="d-flex align-items-center align-items-md-start align-items-xl-center" data-aos="fade-right" data-aos-duration="700" data-aos-once="true">
+<div class="image-section image-section--balanced" style="--section-image: url('{% static 'img/windfarm.webp' %}');">
+  <div class="container section-shell">
+    <div class="row align-items-center g-4">
+      <div class="col-md-10 col-xl-7">
+        <div class="section-panel section-stack" data-aos="fade-right" data-aos-duration="700" data-aos-once="true">
           <div>
-            <h4>Progress So Far</h4>
-            <p><br />Explore the milestones and achievements that highlight the initiative's ongoing development and impact.<br /><br /></p>
-            <a href="{% url 'main:progress_view' %}">View Progress<svg class="bi bi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+            <h4 class="section-heading">Progress So Far</h4>
+            <p class="section-lead">Explore the milestones and achievements that highlight the initiative's ongoing development and impact.</p>
+            <a class="section-link" href="{% url 'main:progress_view' %}">View Progress<svg class="bi bi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"></path>
               </svg></a>
           </div>
         </div>
-        <hr class="my-5" />
-        <div class="d-flex align-items-center align-items-md-start align-items-xl-center" data-aos="fade-right" data-aos-duration="700" data-aos-once="true">
+        <hr class="section-divider" />
+        <div class="section-panel section-stack" data-aos="fade-right" data-aos-duration="700" data-aos-once="true">
           <div>
-            <h4>Future Goals</h4>
-            <p><br />Discover the long-term vision and targets driving sustainability efforts across the Kingdom.<br /><br /></p>
-            <a href="{% url 'main:goal_view' %}">View Goals<svg class="bi bi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+            <h4 class="section-heading">Future Goals</h4>
+            <p class="section-lead">Discover the long-term vision and targets driving sustainability efforts across the Kingdom.</p>
+            <a class="section-link" href="{% url 'main:goal_view' %}">View Goals<svg class="bi bi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"></path>
               </svg></a>
           </div>
         </div>
       </div>
-      <div class="col text-end">
-        <h1 class="me-0" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+      <div class="col-xl-4 text-end">
+        <h1 class="section-heading section-heading--wide section-heading--caps me-0" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
           PROGRESS &amp; VISION
         </h1>
       </div>
     </div>
   </div>
 </div>
-<div
-  style="background: linear-gradient(black 0%, rgba(0, 0, 0, 0.7) 100%), url('{% static 'img/about-mgi.webp' %}') center / cover no-repeat; color: rgb(255, 255, 255);"
->
-  <div class="container py-4 py-xl-5">
+<div class="image-section image-section--strong" style="--section-image: url('{% static 'img/about-mgi.webp' %}');">
+  <div class="container section-shell">
     <div class="row mb-5">
       <div class="col-md-8 col-xl-6 text-center mx-auto" data-aos="fade-up" data-aos-duration="700" data-aos-once="true">
-        <h2>BE PART OF THE CHANGE</h2>
-        <p><br />A sustainable future is built through collective effort. Stay informed, take action, and explore how you can contribute to a greener Saudi Arabia.</p>
+        <h2 class="section-heading section-heading--caps">Be Part of the Change</h2>
+        <p class="section-lead">A sustainable future is built through collective effort. Stay informed, take action, and explore how you can contribute to a greener Saudi Arabia.</p>
       </div>
     </div>
     <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
       <div class="col" data-aos="fade-right" data-aos-duration="700" data-aos-once="true">
-        <div class="d-flex">
-          <div class="px-3">
-            <h4>Get Involved</h4>
-            <p><br />Find simple and meaningful ways to contribute to sustainability in your daily life and community.<br /><br /></p>
-            <a href="{% url 'main:get_involved_view' %}">Start Now<svg class="bi bi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+        <div class="section-panel section-stack h-100">
+          <div>
+            <h4 class="section-heading">Get Involved</h4>
+            <p class="section-lead">Find simple and meaningful ways to contribute to sustainability in your daily life and community.</p>
+            <a class="section-link" href="{% url 'main:get_involved_view' %}">Start Now<svg class="bi bi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"></path>
               </svg></a>
           </div>
         </div>
       </div>
       <div class="col" data-aos="fade-up" data-aos-duration="700" data-aos-once="true">
-        <div class="d-flex">
-          <div class="px-3">
-            <h4>News &amp; Updates</h4>
-            <p><br />Stay up to date with the latest developments, announcements, and progress.<br /><br /></p>
-            <a href="{% url 'main:news_view' %}">Read News<svg class="bi bi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+        <div class="section-panel section-stack h-100">
+          <div>
+            <h4 class="section-heading">News &amp; Updates</h4>
+            <p class="section-lead">Stay up to date with the latest developments, announcements, and progress.</p>
+            <a class="section-link" href="{% url 'main:news_view' %}">Read News<svg class="bi bi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"></path>
               </svg></a>
           </div>
         </div>
       </div>
       <div class="col" data-aos="fade-left" data-aos-duration="700" data-aos-once="true">
-        <div class="d-flex">
-          <div class="px-3">
-            <h4>Contact Us</h4>
-            <p><br />Reach out for more information, questions, or opportunities to connect.<br /><br /></p>
-            <a href="{% url 'main:contact_view' %}">Contact<svg class="bi bi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+        <div class="section-panel section-stack h-100">
+          <div>
+            <h4 class="section-heading">Contact Us</h4>
+            <p class="section-lead">Reach out for more information, questions, or opportunities to connect.</p>
+            <a class="section-link" href="{% url 'main:contact_view' %}">Contact<svg class="bi bi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"></path>
               </svg></a>
           </div>

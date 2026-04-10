@@ -3,8 +3,9 @@
 }
 
 .time-body {
-  background-color: #474e5d;
+  background-color: transparent;
   font-family: Helvetica, sans-serif;
+  padding: 1rem 0 4rem;
 }
 
 .timeline {
@@ -86,7 +87,8 @@
   padding: 20px 30px;
   background-color: white;
   position: relative;
-  border-radius: 6px;
+  border-radius: 16px;
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.18);
 }
 
 @media screen and (max-width: 600px) {
