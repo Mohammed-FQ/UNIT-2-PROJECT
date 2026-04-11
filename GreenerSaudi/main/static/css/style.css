@@ -36,12 +36,14 @@
 
 html {
   scroll-padding-top: calc(4.5rem - 1px);
+  overflow-x: hidden;
 }
 
 body {
   letter-spacing: 0.0625em;
   background-color: var(--site-body-bg);
   color: var(--site-body-color);
+  overflow-x: hidden;
 }
 
 body p {
