@@ -20,13 +20,12 @@
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}" />
     <link rel="stylesheet" href="{% static 'fonts/fontawesome-all.min.css' %}" />
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/Footer-Clean-icons.css' %}" />
     <link rel="stylesheet" href="{% static 'css/embed/animation/aos.min.css' %}" />
     <link rel="stylesheet" href="{% static 'css/embed/animation/animate.min.css' %}" />
     {% block extra_head %}{% endblock %}
     <title>{% block title %}Greener Saudi{% endblock %}</title>
   </head>
-    <body id="page-top"{% block body_attrs %}{% endblock %}>
+    <body id="page-top">
       <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="mainNav" data-static-nav="false">
       <div class="container">
         <a class="navbar-brand" href="{% url 'main:home_view' %}">Greener Saudi</a
@@ -81,8 +80,8 @@
       >
         <div class="d-flex justify-content-center">
           <div class="text-center">
-            <h1 class="text-uppercase mx-auto my-0{% block hero_title_class %} pulse animated{% endblock %}">{% block hero_title %}Greener Saudi{% endblock %}</h1>
-            <h2 class="text-white-50 mt-2 mb-5 mx-auto{% block hero_subtitle_class %} pulse animated{% endblock %}">{% block hero_subtitle %}Building a Greener Future for Saudi Arabia{% endblock %}</h2>
+            <h1 class="text-uppercase mx-auto my-0 pulse animated">{% block hero_title %}Greener Saudi{% endblock %}</h1>
+            <h2 class="text-white-50 mt-2 mb-5 mx-auto pulse animated">Building a Greener Future for Saudi Arabia</h2>
           </div>
         </div>
       </div>

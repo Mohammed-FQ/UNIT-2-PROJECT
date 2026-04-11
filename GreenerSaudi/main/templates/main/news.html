@@ -1,7 +1,33 @@
 {% extends 'main/base.html' %}
 {% load static %}
 {% block title %}News{% endblock %}
-{% block hero_image %}{% static 'img/pr-cover-image.jpg' %}{% endblock %}
-{% block hero_title %}Greener Saudi{% endblock %}
-{% block hero_subtitle %}Building a Greener Future for Saudi Arabia{% endblock %}
-{% block content %}{% endblock %}
+{% block hero_image %}{% static 'img/news_bg.png' %}{% endblock %}
+{% block hero_title %}Latest Updates{% endblock %}
+{% block content %}
+<div class="accent-section">
+    <div class="container section-shell">
+        <div class="row g-4 row-cols-1 row-cols-lg-2">
+            {% for item in news %}
+            <div class="col" data-aos="fade-up" data-aos-duration="700" data-aos-once="true">
+                <div class="section-panel section-panel--soft section-stack h-100 news-card">
+                    <h3 class="section-heading news-title">{{ item.title }}</h3>
+                    <p class="section-lead news-date">Date: {{ item.date }}</p>
+                    <p class="section-lead news-publisher mt-3">Published by: {{ item.publisher }}</p>
+                    <a class="section-link mt-auto" href="{{ item.link }}" target="_blank" rel="noopener noreferrer">Read more<svg class="bi bi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"></path>
+                        </svg></a>
+                    
+                </div>
+            </div>
+            {% empty %}
+            <div class="col-12">
+                <div class="section-panel section-panel--soft text-center">
+                    <h3 class="section-heading">No news available right now</h3>
+                    <p class="section-lead mb-0">Try again later after refreshing the feed.</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

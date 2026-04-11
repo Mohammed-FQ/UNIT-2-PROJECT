@@ -1,5 +1,6 @@
 from django.http import HttpRequest
 from django.shortcuts import redirect, render
+from .fetch_news import fetch_latest_news
 
 
 def home_view(request: HttpRequest):
@@ -21,7 +22,8 @@ def get_involved_view(request: HttpRequest):
     return render(request, 'main/get_involved.html')
 
 def news_view(request: HttpRequest):
-    return render(request, 'main/news.html')
+    news = fetch_latest_news()
+    return render(request, 'main/news.html', {'news': news})
 
 def contact_view(request: HttpRequest):
     return render(request, 'main/contact.html')
