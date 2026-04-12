@@ -419,7 +419,12 @@ body p {
 #mainNav .navbar-brand {
   color: var(--site-nav-text);
   font-weight: 700;
-  padding: 0.9rem 0;
+  padding: 0;
+}
+
+#mainNav .navbar-brand img {
+  height: 4.2rem;
+  width: auto;
 }
 
 #mainNav .nav-link {
@@ -448,7 +453,7 @@ body p {
 
 @media (min-width: 992px) {
   #mainNav .navbar-brand {
-    padding: 0.5rem 0;
+    padding: 0;
     color: var(--site-nav-muted);
   }
 }
