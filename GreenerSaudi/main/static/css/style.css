@@ -34,7 +34,8 @@
   --site-toggle-bg: rgba(255, 255, 255, 0.92);
   --site-toggle-color: #0e302d;
   --site-toggle-border: rgba(14, 48, 45, 0.16);
-  --site-footer-bg: #f3efe5;
+  --site-footer-bg: var(--site-nav-bg);
+  --site-footer-outer-bg: var(--site-body-bg);
   --site-footer-color: #1a1a1a;
 }
 
@@ -73,7 +74,8 @@
   --site-toggle-bg: rgba(255, 255, 255, 0.08);
   --site-toggle-color: #edf1ee;
   --site-toggle-border: rgba(255, 255, 255, 0.18);
-  --site-footer-bg: #0f1918;
+  --site-footer-bg: var(--site-nav-bg);
+  --site-footer-outer-bg: var(--site-body-bg);
   --site-footer-color: #edf1ee;
 }
 
@@ -675,9 +677,10 @@ body p {
 
 .footer {
   padding: 2rem 0;
+  background-color: var(--site-footer-outer-bg);
 }
 
-.footer .bg-body {
+.footer .footer-inner {
   background-color: var(--site-footer-bg);
   color: var(--site-footer-color);
 }
